@@ -216,7 +216,7 @@ const Home = () => {
     .flat()
     .sort((d1, d2) => {
       if (
-        dayjs(d1.feedData.block_number).isBefore(dayjs(d2.feedData.inserted_at))
+        dayjs(d1.feedData.inserted_at).isBefore(dayjs(d2.feedData.inserted_at))
       ) {
         return -1;
       } else if (
