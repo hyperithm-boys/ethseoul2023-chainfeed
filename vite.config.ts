@@ -4,6 +4,7 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/ethseoul2023-chainfeed/",
   plugins: [svgr(), react()],
   test: {
     globals: true,
