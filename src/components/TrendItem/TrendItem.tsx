@@ -36,7 +36,7 @@ const TrendItem = (props: {
       <div className="flex flex-row justify-start items-center text-center">
         <div className="h-8 py-1.5 px-3 mb-4 text-white bg-black">{tag}</div>
       </div>
-      <div className="...">{contents}</div>
+      <div className="text-black">{contents}</div>
     </div>
   );
 };

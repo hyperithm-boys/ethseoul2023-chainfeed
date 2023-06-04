@@ -241,7 +241,7 @@ const Home = () => {
 
   return (
     <div className="w-screen h-screen flex flex-row bg-newspaper">
-      <div className="w-72 h-screen border-r border-black py-8 pl-8 flex flex-row justify-start font-helvetica">
+      <div className="w-72 h-screen border-r border-black py-8 pl-8 flex flex-row justify-start font-helvetica text-black">
         <div className="w-7 h-44 relative bg-black"></div>
         <div className="w-full">
           <div
@@ -255,7 +255,7 @@ const Home = () => {
       </div>
       <div className="w-[calc(100vw-18rem)] flex flex-col justify-start">
         <div className="h-54 border-b border-black pt-8 pb-12 flex flex-col justify-start">
-          <div className="h-12 pl-2 pr-8 flex flex-row justify-between items-center font-helvetica font-bold text-lg">
+          <div className="h-12 pl-2 pr-8 flex flex-row justify-between items-center font-helvetica font-bold text-lg text-black">
             <div>SELECT YOUR TAG FOR EASY TRADING</div>
             <div
               className="w-60 h-10 py-1 px-3 border-4 border-transparent rounded-full flex flex-row justify-center items-center hover:cursor-pointer hover:border-slate-200"
@@ -313,7 +313,7 @@ const Home = () => {
             ref={feedRef}
             onScroll={handleScrollFeed}
           >
-            <div className="py-4 px-10 border-b border-black font-bold text-lg">
+            <div className="py-4 px-10 border-b border-black font-bold text-lg text-black">
               FEED
             </div>
             {isSelectedAll
@@ -339,7 +339,7 @@ const Home = () => {
             ref={trendRef}
             onScroll={handleScrollTrend}
           >
-            <div className="py-4 font-bold text-lg"># Trending</div>
+            <div className="py-4 font-bold text-lg text-black"># Trending</div>
             {allTagsFeeds
               .filter((_, idx) => [2, 5, 11, 23].includes(idx))
               .map((d) => (
