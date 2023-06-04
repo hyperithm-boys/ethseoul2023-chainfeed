@@ -3,31 +3,45 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Consolas";
-  src: url("./fonts/CONSOLA.ttf") format("truetype");
+  font-family: "Georgia";
+  src: url("./fonts/Georgia.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Consolas";
-  src: url("./fonts/CONSOLAB.ttf") format("truetype");
+  font-family: "Georgia";
+  src: url("./fonts/georgia bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Consolas";
-  src: url("./fonts/Consolas.ttf") format("truetype");
+  font-family: "Georgia";
+  src: url("./fonts/georgia italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Consolas";
-  src: url("./fonts/Consolaz.ttf") format("truetype");
+  font-family: "Georgia";
+  src: url("./fonts/georgia bold italic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/Helvetica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/Helvetica-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 :root {
