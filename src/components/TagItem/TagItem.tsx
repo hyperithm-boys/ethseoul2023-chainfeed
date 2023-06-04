@@ -10,7 +10,7 @@ const TagItem = (props: {
   return (
     <div
       className={classNames(
-        "h-16 p-2 flex items-center flex-shrink-0 font-georgia font-sm hover:cursor-pointer hover:bg-black hover:text-slate-200 hover:border-transparent",
+        "h-16 py-2 px-4 flex items-center flex-shrink-0 font-georgia font-sm hover:cursor-pointer hover:bg-black hover:text-slate-200 hover:border-transparent",
         {
           "bg-black text-slate-200": isSelected,
           "border-y border-r border-black text-slate-700": !isSelected,
