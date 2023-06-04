@@ -218,11 +218,11 @@ const Home = () => {
       if (
         dayjs(d1.feedData.inserted_at).isBefore(dayjs(d2.feedData.inserted_at))
       ) {
-        return -1;
+        return 1;
       } else if (
         dayjs(d1.feedData.inserted_at).isAfter(dayjs(d2.feedData.inserted_at))
       ) {
-        return 1;
+        return -1;
       } else {
         return 0;
       }
