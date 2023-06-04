@@ -17,7 +17,7 @@ import shareIcon from "../../assets/share.svg";
 import chainIcon from "../../assets/chain.svg";
 import { MessageType } from "./types";
 import classNames from "classnames";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import { getTxContents, isStable } from "../../utils";
 
@@ -83,7 +83,7 @@ const FeedItem = (props: {
       case Tag.liquidations:
         return {
           type: MessageType.Blue,
-          msg: "A new swap pair has been listed on Uniswap- potentially a trading opportunity, but beware of vollatility.",
+          msg: "ETH Collateral being sold on Uniswap by protocol could potentially impact the price in the short term.",
         };
       case Tag.swapPoolCreations:
         return {
@@ -125,12 +125,12 @@ const FeedItem = (props: {
   const contents = getTxContents(tag as Tag, feedData, tokens);
   const message = getTxMessage(tag as Tag);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div
       className="w-120 py-0 pl-36 pr-12 font-georgia"
-      onClick={() => navigate(`/${tag}/${feedData.id}`)}
+      // onClick={() => navigate(`/${tag}/${feedData.id}`)}
     >
       <div className="py-3 flex flex-row justify-start items-center text-center">
         <div className="py-1.5 px-3 mr-1.5 font-bold text-sm text-white bg-black">
@@ -163,7 +163,7 @@ const FeedItem = (props: {
         <div className="pb-4 flex items-center">
           <div
             className={classNames(
-              "h-8 py-1.5 px-2 border-b border-black text-sm text-white bg-red-500",
+              "h-8 py-1.5 px-2 border-b border-black text-sm text-white",
               {
                 "bg-red-500": message.type == MessageType.Red,
                 "bg-yellow-500": message.type == MessageType.Yellow,
