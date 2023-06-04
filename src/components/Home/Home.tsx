@@ -1,10 +1,4 @@
-import React, {
-  useRef,
-  UIEvent,
-  useState,
-  useEffect,
-  useCallback,
-} from "react";
+import { useRef, UIEvent, useState, useEffect, useCallback } from "react";
 import { Position } from "./types";
 import TagItem from "../TagItem/TagItem";
 import FeedItem from "../FeedItem/FeedItem";
@@ -347,7 +341,7 @@ const Home = () => {
           >
             <div className="py-4 font-bold text-lg"># Trending</div>
             {allTagsFeeds
-              .filter((d, idx) => [2, 5, 11, 23].includes(idx))
+              .filter((_, idx) => [2, 5, 11, 23].includes(idx))
               .map((d) => (
                 <TrendItem tag={d.tag} feedData={d.feedData} tokens={tokens} />
               ))}
