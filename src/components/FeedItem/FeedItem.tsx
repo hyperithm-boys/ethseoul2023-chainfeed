@@ -1,4 +1,3 @@
-import React, { useCallback, useState } from "react";
 import {
   Erc20Swaps,
   Liquidations,
@@ -20,13 +19,7 @@ import { MessageType } from "./types";
 import classNames from "classnames";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
-import {
-  getShortAddress,
-  getTokenDecimals,
-  getTokenSymbol,
-  getTxContents,
-  isStable,
-} from "../../utils";
+import { getTxContents, isStable } from "../../utils";
 
 const FeedItem = (props: {
   tag: string;

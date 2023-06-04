@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Erc20Swaps,
   Liquidations,
