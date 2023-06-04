@@ -57,7 +57,7 @@ export const getTxContents = (
       } ${getTokenSymbol(tokens, fd.from_token_address)} to ${
         Number(fd.to_amount) /
         Number(Math.pow(10, getTokenDecimals(tokens, fd.to_token_address)))
-      } ${getTokenSymbol(tokens, fd.to_token_address)} ($${fd.usd_value / 2})`;
+      } ${getTokenSymbol(tokens, fd.to_token_address)} ($${fd.usd_value})`;
     case Tag.liquidations:
       fd = feedData as Liquidations;
       return `Liquidation: ${getTokenSymbol(
